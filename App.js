@@ -20,6 +20,8 @@ import StateTest from "./StateTest";
 import RefTest from "./RefTest";
 import Student from "./Student";
 import MIngStudent from "./MIngStudent";
+import FlexBoxTest from "./FlexBoxTest";
+import TouchableTest from "./TouchableTest";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -77,17 +79,17 @@ export default class App extends Component {
           {/*<StateTest/>*/}
 
           {/*//3.ref使用*/}
-          <Text
-                style ={{fontSize:20}}
-                onPress = {()=>{
-                    var size = this.refs.reftest.getsize();
-                    this.setState({
-                        size:size,
-                    })
-                }}>
-              {/*获取气球大小:{this.state.size}*/}
-              {this.stu.getDescription()}
-              </Text>
+          {/*<Text*/}
+                {/*style ={{fontSize:20}}*/}
+                {/*onPress = {()=>{*/}
+                    {/*var size = this.refs.reftest.getsize();*/}
+                    {/*this.setState({*/}
+                        {/*size:size,*/}
+                    {/*})*/}
+                {/*}}>*/}
+              {/*/!*获取气球大小:{this.state.size}*!/*/}
+              {/*{this.stu.getDescription()}*/}
+              {/*</Text>*/}
 
           {/*<RefTest ref = 'reftest'/>*/}
 
@@ -100,6 +102,12 @@ export default class App extends Component {
           {/*sex = {sex}*/}
       {/*/>*/}
 
+      {/*5.flexbox*/}
+          {/*<FlexBoxTest/>*/}
+
+          {/*6.按钮*/}
+          <TouchableTest/>
+
       </View>
     );
   }
@@ -109,10 +117,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'flex-start',
-    alignItems: 'center',
     backgroundColor: '#ffffff',
     marginTop:50,
+
   },
+    // alignItems:'center'
 
 
 });
