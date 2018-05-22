@@ -22,6 +22,7 @@ import Student from "./Student";
 import MIngStudent from "./MIngStudent";
 import FlexBoxTest from "./FlexBoxTest";
 import TouchableTest from "./TouchableTest";
+import ImageTest from "./ImageTest";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -106,7 +107,10 @@ export default class App extends Component {
           {/*<FlexBoxTest/>*/}
 
           {/*6.按钮*/}
-          <TouchableTest/>
+          {/*<TouchableTest/>*/}
+
+          {/*7.图片*/}
+          <ImageTest/>
 
       </View>
     );
