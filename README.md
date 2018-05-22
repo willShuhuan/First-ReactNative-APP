@@ -5,5 +5,7 @@
 ### LifeCycleComponent.js 生命周期    
 ### PropsTest.js props使用    
 ### StateTest.js state使用    
+### RefTest.js ref使用    
+### Student.js&MIngStudent.js 类的使用与继承 
 
 
